@@ -6,21 +6,18 @@ let colorBad = "red";
 
 // Speichere das Feedback-Element
 let feedback = document.getElementById('feedback');
-// und das Emoji-Element
-let smiley = document.getElementById('smiley');
 
-// TODO: Ersetze inner Text/HTML durch neue Smileys
-let innerNeu = "<i class="bi bi-emoji-heart-eyes" id="smiley"></i>";
+// TODO: Ersetze inner HTML durch neue Smileys
 
 
 // Kommentar zu good
 function good() {
   feedback.innerHTML = messageGood;
-  // TODO: hier ersetzen
-
   // aus W3schools eingefügt
   feedback.style.color = colorGood;
-  smiley.style.color = colorGood;
+  // TODO: hier ersetzen
+  document.getElementById('wrapper').innerHTML = '<i class="bi bi-emoji-heart-eyes" id="smiley"></i>';
+  document.getElementById('smiley').style.color = colorGood;
 }
 
 // Copy Paste
@@ -28,5 +25,6 @@ function bad() {
   console.log("bad");
   feedback.innerHTML = messageBad;
   feedback.style.color = colorBad;
-  smiley.style.color = colorBad;
+  document.getElementById('wrapper').innerHTML = '<i class="bi bi-emoji-dizzy id="smiley"></i>';
+  document.getElementById('smiley').style.color = colorBad; // noch ein Fehler
 }
