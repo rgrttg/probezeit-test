@@ -11,3 +11,7 @@
 3... POS
 
 ## JavaScript Teil 1
+1... POS
+2a... POS
+b... POS
+c... POS
